@@ -1,13 +1,308 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Zilla+Slab+Highlight&display=swap");
+
+/* App */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: cornsilk;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 20rem;
+  margin: 0 auto;
+  /* background-color: springgreen; */
+}
+
+h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 80px;
+  color: #f08080;
+  text-align: center;
+  height: 8rem;
+  /* background-color: slateblue; */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  width: 10rem;
+  height: 36rem;
+  /* background-color: skyblue; */
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  border: 1px solid #f08080;
+  background-color: white;
+  padding: 0.6rem;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 1px 1px 0 #f08080;
+}
+
+.btn:hover {
+  animation: scale 1s 1;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 #f08080;
+  transform: translateY(-1px);
+  transition: transform 100ms;
+}
+
+#final {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20rem;
+}
+
+.the-scores {
+  font-size: 35px;
+  text-align: center;
+  width: 18rem;
+}
+
+#restart {
+  width: 6rem;
+  height: 3rem;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 30rem;
+  height: 8rem;
+  /* background-color: skyblue; */
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.3rem;
+  height: 1.5rem;
+  border: 1px solid #f08080;
+  background-color: white;
+  padding: 0.6rem;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 1px 1px 0 #f08080;
+}
+
+.btn:hover {
+  animation: scale 1s 1;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 #f08080;
+  transform: translateY(-1px);
+  transition: transform 100ms;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+/* Game */
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 15rem;
+  min-height: 30rem;
+  max-height: 35rem;
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+  /* background-color: aqua; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 25rem;
+  min-height: 3rem;
+  /* background-color: yellow; */
+}
+
+#item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 10rem;
+  min-height: 4rem;
+  /* background-color: royalblue; */
+}
+
+#item p {
+  font-size: 25px;
+}
+
+#item h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 5rem;
+  height: 3rem;
+  /* background-color: sienna; */
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  /* background-color: #ff1c1c; */
+}
+
+/* #nextBtn {
+  width: 4rem;
+  height: 2.15rem;
+} */
+
+#homeBtn {
+  width: 2.5rem;
+  height: 0.8rem;
+}
+
+#question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14rem;
+  width: 42rem;
+  font-size: 40px;
+  padding: 1rem;
+  /* background-color: blue; */
+  text-align: center;
+}
+
+#choicesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 40rem;
+  min-height: 10rem;
+  padding: 1rem;
+  /* background-color: seagreen; */
+}
+.choice-box {
+  display: flex;
+  align-items: center;
+  min-width: 35rem;
+  min-height: 2.4rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 1px solid #f08080;
+  font-size: 18px;
+}
+
+.choice-box:hover {
+  animation: scale 1s 1;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 #f08080;
+  transform: translateY(-1px);
+  transition: transform 100ms;
+}
+
+.choice-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f08080;
+  padding: 5px 15px;
+  height: 1.9rem;
+}
+
+.choice-text {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 100%;
+  min-height: 2.4rem;
+}
+
+.correct {
+  background-color: #2bb12b;
+}
+
+.incorrect {
+  background-color: #ff1c1c;
+}
+
+/* loader  */
+
+.loader {
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect {
+  fill: #f08080;
+}
+
+/* end page */
+
+#final {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 14rem;
+  /* background-color: #ff1c1c; */
+}
+
+.the-scores {
+  font-size: 35px;
+  text-align: center;
+  width: 18rem;
+  /* background-color: aqua; */
+}
+
+#restart {
+  width: 5rem;
+  height: 2rem;
 }
