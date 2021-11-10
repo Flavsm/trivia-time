@@ -37,25 +37,27 @@ const Main = () => {
   const chooseSubject = (path) => {
     console.log(window.location);
     console.log(path);
-    if (path === "/game/general") {
+    const pathName = "/trivia-time/game";
+
+    if (path === `${pathName}/general`) {
       return url(9);
-    } else if (path === "/game/geography") {
+    } else if (path === `${pathName}/geography`) {
       return url(22);
-    } else if (path === "/game/history") {
+    } else if (path === `${pathName}/history`) {
       return url(23);
-    } else if (path === "/game/sports") {
+    } else if (path === `${pathName}/sports`) {
       return url(21);
-    } else if (path === "/game/mythology") {
+    } else if (path === `${pathName}/mythology`) {
       return url(20);
-    } else if (path === "/game/music") {
+    } else if (path === `${pathName}/music`) {
       return url(12);
-    } else if (path === "/game/science") {
+    } else if (path === `${pathName}/science`) {
       return url(17);
-    } else if (path === "/game/politics") {
+    } else if (path === `${pathName}/politics`) {
       return url(24);
-    } else if (path === "/game/animals") {
+    } else if (path === `${pathName}/animals`) {
       return url(27);
-    } else if (path === "/game/random") {
+    } else if (path === `${pathName}/random`) {
       return url(0);
     }
   };
