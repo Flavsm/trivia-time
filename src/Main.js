@@ -35,6 +35,7 @@ const Main = () => {
     `https://opentdb.com/api.php?amount=5&category=${id}&type=multiple&encode=base64`;
 
   const chooseSubject = (path) => {
+    console.log(window.location);
     console.log(path);
     if (path === "/game/general") {
       return url(9);
