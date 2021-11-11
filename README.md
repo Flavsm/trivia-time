@@ -21,4 +21,4 @@ Improvement
 Future features I would like to implement are:
 *  Updating fetch to use Async/Await
 *  Soft code some areas that currently aren't optimal
-*  Learn how to write better implementations of the data received from fetch
+*  Better ways of distributing the data received from fetch
