@@ -1,14 +1,14 @@
-TRIVIA TIME
+# TRIVIA TIME
 
-Overview
+## Overview
 
 In this trivia web app, users answer 5 multiple choice questions in the subject of their choosing. As the user progresses, the question counter and the score will update. After the 5 questions are answered, the user will receive a message and their final score. The user will also have the option to press the 'restart' button and play again. The main stack used is REACT.js.
 
-Purpose
+## Purpose
 
 This project started as a way to practice applying REACT to real apps, and it is going to be added to my portfolio.
 
-Challenges
+## Challenges
 
 The challenges of this project were mainly:
 *  Using FETCH API in a project for the first time
@@ -16,7 +16,7 @@ The challenges of this project were mainly:
 *  Learning React Router and how to apply it
 *  Using React Hooks like useEffect and UseState as well as learning useReff and useHistory
 
-Improvement
+## Improvement
 
 Future features I would like to implement are:
 *  Updating fetch to use Async/Await
