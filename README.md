@@ -6,7 +6,7 @@ In this trivia web app, users answer 5 multiple choice questions in the subject 
 
 ## Purpose
 
-This project started as a way to practice applying REACT to real apps, and it is going to be added to my portfolio.
+This project started as a way to practice applying REACT to real apps, and it has been added to my portfolio.
 
 ## Challenges
 
