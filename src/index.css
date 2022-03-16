@@ -15,7 +15,7 @@
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  background: #05595b;
+  background: #fff8dc;
   box-sizing: content-box;
   overflow: hidden;
 }
@@ -41,7 +41,7 @@
 .heading {
   font-family: "Luckiest Guy", cursive;
   font-size: 10rem;
-  color: #f5f5f5;
+  color: #f08080;
   text-align: center;
   padding: 0 4rem;
 }
@@ -65,20 +65,20 @@
   align-items: center;
   width: 4.5rem;
   height: 2rem;
-  border: 2px solid #062c30;
-  background: #e2d784;
+  border: 2px solid #f08080;
+  background: #fff;
   padding: 0.6rem;
   color: #062c30;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 1px 1px 0 #062c30;
+  box-shadow: 0 1px 1px 0 #f08080;
 }
 
 .btn:hover {
   animation: scale 1s 1;
   cursor: pointer;
-  box-shadow: 0 2px 2px 0 #062c30;
+  box-shadow: 0 2px 2px 0 #f08080;
   transform: translateY(-1px);
   transition: transform 100ms;
 }
@@ -89,7 +89,7 @@
 
 /******************************************
 /* GAME
-/*******************************************/
+/******************************************/
 
 .loadGame {
   display: flex;
@@ -106,6 +106,7 @@
   height: 40rem;
   margin: 0 auto;
   font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
 }
 
 .header {
@@ -129,7 +130,7 @@
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  color: #f5f5f5;
+  color: black;
   width: 100%;
 }
 
@@ -140,7 +141,7 @@
   font-size: 2.5rem;
   width: 100%;
   height: 10%;
-  color: #e2d784;
+  color: #f08080;
   font-family: "Luckiest Guy", cursive;
 }
 
@@ -153,7 +154,8 @@
   font-size: 2.5rem;
   padding: 1rem;
   text-align: center;
-  color: #f5f5f5;
+  color: black;
+  /* font-family: "Rubik", sans-serif; */
 }
 
 #choicesContainer {
@@ -169,16 +171,19 @@
   justify-content: space-around;
   align-items: center;
   width: 85%;
-  height: 18%;
+  height: 17.5%;
   max-height: 20%;
-  background: #f5f5f5;
+  background: #fff;
   font-size: 1rem;
+  border-bottom: 2px solid #f08080;
+  border-top: 2px solid #f08080;
+  border-right: 2px solid #f08080;
 }
 
 .choice-box:hover {
   animation: scale 1s 1;
   cursor: pointer;
-  box-shadow: 0 3px 3px 0#062c30;
+  box-shadow: 0 3px 3px 0#f08080;
   transform: translateY(-1px);
   transition: transform 100ms;
 }
@@ -187,10 +192,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #e2d784;
+  background: #f08080;
   height: 99%;
   width: 14%;
-  border: 3px solid #062c30;
+  border: 2px solid #f08080;
   border-style: outset;
 }
 
@@ -243,7 +248,7 @@
 */
 svg path,
 svg rect {
-  fill: #e2d784;
+  fill: #f08080;
 }
 
 /******************************************
@@ -262,7 +267,7 @@ svg rect {
 .the-scores {
   font-size: 35px;
   font-family: "Luckiest Guy", cursive;
-  color: white;
+  color: #f08080;
   text-align: center;
   width: 18rem;
 }
