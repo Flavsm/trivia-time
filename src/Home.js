@@ -4,37 +4,37 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div id="home">
-      <h1>Trivia Time</h1>
+    <div className="home">
+      <h1 className="heading homeHeading">Trivia Time</h1>
       <div className="buttons">
-        <Link id="gkBtn" className="btn" to="/game/general">
+        <Link id="gkBtn" className="btn homeBtn" to="/game/general">
           General
         </Link>
-        <Link id="historyBtn" className="btn" to="/game/history">
+        <Link id="historyBtn" className="btn homeBtn" to="/game/history">
           History
         </Link>
-        <Link id="geographyBtn" className="btn" to="/game/geography">
+        <Link id="geographyBtn" className="btn homeBtn" to="/game/geography">
           Geography
         </Link>
-        <Link id="sportsBtn" className="btn" to="/game/sports">
+        <Link id="sportsBtn" className="btn homeBtn" to="/game/sports">
           Sports
         </Link>
-        <Link id="mythologyBtn" className="btn" to="/game/mythology">
+        <Link id="mythologyBtn" className="btn homeBtn" to="/game/mythology">
           Mythology
         </Link>
-        <Link id="musicBtn" className="btn" to="/game/music">
+        <Link id="musicBtn" className="btn homeBtn" to="/game/music">
           Music
         </Link>
-        <Link id="scienceBtn" className="btn" to="/game/science">
+        <Link id="scienceBtn" className="btn homeBtn" to="/game/science">
           Science!
         </Link>
-        <Link id="politicsBtn" className="btn" to="/game/politics">
+        <Link id="politicsBtn" className="btn homeBtn" to="/game/politics">
           Politics
         </Link>
-        <Link id="animalsBtn" className="btn" to="/game/animals">
+        <Link id="animalsBtn" className="btn homeBtn" to="/game/animals">
           Animals
         </Link>
-        <Link id="randomBtn" className="btn" to="/game/random">
+        <Link id="randomBtn" className="btn homeBtn" to="/game/random">
           Random
         </Link>
       </div>

@@ -202,7 +202,7 @@ const Main = () => {
   };
 
   return (
-    <div className="game">
+    <div className="loadGame">
       {error && <h2>{error}</h2>}
       {isPending && <LoadingIcon />}
       {question && (

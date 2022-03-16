@@ -237,7 +237,7 @@ const Game = (props) => {
   };
 
   return (
-    <div className="game">
+    <div>
       {error && <h2>{error}</h2>}
       {isPending && <LoadingIcon />}
       {question && (

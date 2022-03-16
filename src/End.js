@@ -17,16 +17,14 @@ const End = (props) => {
   }
 
   return (
-    <div className="container">
-      <div id="final">
-        <h1>{finalText}</h1>
-        <h1 className="the-scores" id="totalScore">
-          Final Score: {totalFinalScore}
-        </h1>
-        <Link className="btn" id="restart" to="/">
-          Restart
-        </Link>
-      </div>
+    <div id="final">
+      <h1 className="heading finalHeading">{finalText}</h1>
+      <h2 className="the-scores" id="totalScore">
+        Final Score: {totalFinalScore}
+      </h2>
+      <Link className="btn" id="restart" to="/">
+        Restart
+      </Link>
     </div>
   );
 };

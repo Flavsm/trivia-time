@@ -7,16 +7,16 @@ const LoadedGame = (props) => {
     <div className="game">
       <div className="header">
         <div id="item">
-          <p className="item-prefix">Question</p>
-          <h1 className="main-text" id="questionCounter">
+          <h2 className="item-prefix">Question</h2>
+          <h3 className="main-text" id="questionCounter">
             {props.currentQuestion} / {props.totalQuestion}
-          </h1>
+          </h3>
         </div>
         <div id="item">
-          <p className="item-prefix">Score</p>
-          <h1 className="main-text" id="score">
+          <h2 className="item-prefix">Score</h2>
+          <h3 className="main-text" id="score">
             {props.score}
-          </h1>
+          </h3>
         </div>
       </div>
       <h2 id="question">{props.question}</h2>

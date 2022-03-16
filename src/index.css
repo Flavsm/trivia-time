@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Zilla+Slab+Highlight&display=swap");
 
-/* App */
+/******************************************
+/* APP / ROOT
+/*******************************************/
 
 * {
   margin: 0;
@@ -13,115 +15,70 @@
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  background-color: cornsilk;
+  background: #05595b;
+  box-sizing: content-box;
+  overflow: hidden;
 }
 
-#home {
+.html {
+  font-size: 62.5%;
+}
+
+/******************************************
+/* HOME
+/*******************************************/
+
+.home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 30rem;
-  height: 20rem;
+  width: 80%;
+  height: 60%;
   margin: 0 auto;
-  /* background-color: springgreen; */
 }
 
-h1 {
+.heading {
   font-family: "Luckiest Guy", cursive;
-  font-size: 80px;
-  color: #f08080;
+  font-size: 10rem;
+  color: #f5f5f5;
   text-align: center;
-  height: 8rem;
-  /* background-color: slateblue; */
+  padding: 0 4rem;
 }
+
+/******************************************
+/* BUTTONS
+/*******************************************/
 
 .buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* flex-wrap: wrap; */
   justify-content: space-around;
-  width: 10rem;
-  height: 36rem;
-  /* background-color: skyblue; */
+  flex-wrap: wrap;
+  align-items: center;
+  width: 49%;
+  height: 25%;
 }
 
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
+  width: 4.5rem;
   height: 2rem;
-  border: 1px solid #f08080;
-  background-color: white;
+  border: 2px solid #062c30;
+  background: #e2d784;
   padding: 0.6rem;
-  color: black;
+  color: #062c30;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 1px 1px 0 #f08080;
+  box-shadow: 0 1px 1px 0 #062c30;
 }
 
 .btn:hover {
   animation: scale 1s 1;
   cursor: pointer;
-  box-shadow: 0 2px 2px 0 #f08080;
-  transform: translateY(-1px);
-  transition: transform 100ms;
-}
-
-#final {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 20rem;
-}
-
-.the-scores {
-  font-size: 35px;
-  text-align: center;
-  width: 18rem;
-}
-
-#restart {
-  width: 6rem;
-  height: 3rem;
-}
-
-/* Buttons */
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 30rem;
-  height: 8rem;
-  /* background-color: skyblue; */
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 4.3rem;
-  height: 1.5rem;
-  border: 1px solid #f08080;
-  background-color: white;
-  padding: 0.6rem;
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-  box-shadow: 0 1px 1px 0 #f08080;
-}
-
-.btn:hover {
-  animation: scale 1s 1;
-  cursor: pointer;
-  box-shadow: 0 2px 2px 0 #f08080;
+  box-shadow: 0 2px 2px 0 #062c30;
   transform: translateY(-1px);
   transition: transform 100ms;
 }
@@ -130,28 +87,33 @@ h1 {
   transform: scale(0.9);
 }
 
-/* Game */
+/******************************************
+/* GAME
+/*******************************************/
+
+.loadGame {
+  display: flex;
+  align-items: center;
+  height: 99vh;
+}
 
 .game {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-width: 15rem;
-  min-height: 30rem;
-  max-height: 35rem;
+  width: 55rem;
+  height: 40rem;
   margin: 0 auto;
   font-family: "Times New Roman", Times, serif;
-  /* background-color: aqua; */
 }
 
 .header {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  min-width: 25rem;
-  min-height: 3rem;
-  /* background-color: yellow; */
+  align-items: flex-start;
+  width: 90%;
+  height: 20%;
 }
 
 #item {
@@ -159,54 +121,39 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-width: 10rem;
-  min-height: 4rem;
-  /* background-color: royalblue; */
+  width: 50%;
+  height: 90%;
 }
 
-#item p {
-  font-size: 25px;
+#item h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: #f5f5f5;
+  width: 100%;
 }
 
-#item h1 {
+#item h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  width: 5rem;
-  height: 3rem;
-  /* background-color: sienna; */
-}
-
-#footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10rem;
-  height: 3rem;
-  /* background-color: #ff1c1c; */
-}
-
-/* #nextBtn {
-  width: 4rem;
-  height: 2.15rem;
-} */
-
-#homeBtn {
-  width: 2.5rem;
-  height: 0.8rem;
+  font-size: 2.5rem;
+  width: 100%;
+  height: 10%;
+  color: #e2d784;
+  font-family: "Luckiest Guy", cursive;
 }
 
 #question {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 14rem;
-  width: 42rem;
-  font-size: 40px;
+  height: 15%;
+  max-width: 90%;
+  font-size: 2.5rem;
   padding: 1rem;
-  /* background-color: blue; */
   text-align: center;
+  color: #f5f5f5;
 }
 
 #choicesContainer {
@@ -214,26 +161,24 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-width: 40rem;
-  min-height: 10rem;
-  padding: 1rem;
-  /* background-color: seagreen; */
+  width: 65%;
+  height: 35%;
 }
 .choice-box {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  min-width: 35rem;
-  min-height: 2.4rem;
-  margin-bottom: 1rem;
-  background-color: white;
-  border: 1px solid #f08080;
-  font-size: 18px;
+  width: 85%;
+  height: 18%;
+  max-height: 20%;
+  background: #f5f5f5;
+  font-size: 1rem;
 }
 
 .choice-box:hover {
   animation: scale 1s 1;
   cursor: pointer;
-  box-shadow: 0 2px 2px 0 #f08080;
+  box-shadow: 0 3px 3px 0#062c30;
   transform: translateY(-1px);
   transition: transform 100ms;
 }
@@ -242,17 +187,19 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f08080;
-  padding: 5px 15px;
-  height: 1.9rem;
+  background: #e2d784;
+  height: 99%;
+  width: 14%;
+  border: 3px solid #062c30;
+  border-style: outset;
 }
 
 .choice-text {
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 1rem;
   width: 100%;
-  min-height: 2.4rem;
+  height: 100%;
 }
 
 .correct {
@@ -263,7 +210,22 @@ h1 {
   background-color: #ff1c1c;
 }
 
-/* loader  */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+}
+
+#homeBtn {
+  width: 4rem;
+  height: 1.5rem;
+}
+
+/******************************************
+/* LOADER
+/*******************************************/
 
 .loader {
   margin: 0 0 2em;
@@ -281,28 +243,118 @@ h1 {
 */
 svg path,
 svg rect {
-  fill: #f08080;
+  fill: #e2d784;
 }
 
-/* end page */
+/******************************************
+/* END PAGE
+/*******************************************/
 
 #final {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 14rem;
-  /* background-color: #ff1c1c; */
+  height: 45%;
+  width: 60%;
 }
 
 .the-scores {
   font-size: 35px;
+  font-family: "Luckiest Guy", cursive;
+  color: white;
   text-align: center;
   width: 18rem;
-  /* background-color: aqua; */
 }
 
-#restart {
-  width: 5rem;
-  height: 2rem;
+/* .btn #restart {
+  width: 20%;
+  height: 20%;
+}
+ */
+/******************************************
+/* SMARTPHONE MEDIA QUERY
+/*******************************************/
+
+@media all and (max-width: 490px) {
+  .home {
+    height: 80%;
+    justify-content: space-evenly;
+  }
+
+  .heading {
+    font-size: 6rem;
+  }
+  .game {
+    width: 95%;
+    height: 90%;
+  }
+  .buttons {
+    display: flex;
+    width: 90%;
+    max-height: 35%;
+  }
+
+  .btn {
+    height: 1.5rem;
+    width: 4rem;
+  }
+  #question {
+    font-size: 1.7rem;
+    height: 25%;
+  }
+
+  #item {
+    height: 70%;
+  }
+
+  #choicesContainer {
+    width: 100%;
+  }
+  .choice-box {
+    width: 90%;
+  }
+  /* .choice-option {
+    width: ;
+  } */
+}
+
+/******************************************
+/* TABLET MEDIA QUERY
+/*******************************************/
+
+@media screen and (min-width: 491px) and (max-width: 768px) {
+  .homeHeading {
+    font-size: 13rem;
+  }
+  .game {
+    width: 45rem;
+    height: 60rem;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .homeBtn {
+    padding: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  #question {
+    height: 20%;
+    font-size: 3rem;
+  }
+
+  #item {
+    height: 50%;
+  }
+
+  #choicesContainer {
+    width: 70%;
+  }
+  .choice-box {
+    width: 90%;
+  }
+  #final {
+    height: 50%;
+  }
 }
