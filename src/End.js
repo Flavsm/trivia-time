@@ -18,7 +18,7 @@ const End = (props) => {
 
   return (
     <div id="final">
-      <h1 className="heading finalHeading">{finalText}</h1>
+      <h1 className="finalHeading">{finalText}</h1>
       <h2 className="the-scores" id="totalScore">
         Final Score: {totalFinalScore}
       </h2>

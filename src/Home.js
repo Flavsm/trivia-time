@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home">
-      <h1 className="heading homeHeading">Trivia Time</h1>
+      <h1 className="heading homeHeading">Let's Get Quizzical!</h1>
       <div className="buttons">
         <Link id="gkBtn" className="btn homeBtn" to="/game/general">
           General
