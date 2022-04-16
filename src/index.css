@@ -30,13 +30,13 @@
   justify-content: space-around;
   align-items: center;
   width: 80%;
-  height: 60%;
+  height: 70%;
   margin: 0 auto;
 }
 
 .heading {
   font-family: "Luckiest Guy", cursive;
-  font-size: 9rem;
+  font-size: 12rem;
   color: #f08080;
   text-align: center;
   padding: 0 4rem;
@@ -51,22 +51,22 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  width: 70%;
-  height: 25%;
+  width: 50%;
+  height: 30%;
 }
 
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7rem;
-  height: 3rem;
+  width: 8rem;
+  height: 4rem;
   border: 2px solid #f08080;
   background: #fff;
   padding: 0.6rem;
   color: #062c30;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
   box-shadow: 0 1px 1px 0 #f08080;
 }
@@ -98,8 +98,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 55rem;
-  height: 55rem;
+  width: 85%;
+  height: 90%;
   margin: 0 auto;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
@@ -108,7 +108,7 @@
 .header {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   width: 90%;
   height: 15%;
 }
@@ -134,7 +134,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   width: 100%;
   height: 10%;
   color: #f08080;
@@ -145,13 +145,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35%;
-  max-width: 90%;
+  height: 30%;
+  max-width: 65rem;
   font-size: 3.5rem;
   padding: 1rem;
   text-align: center;
   color: black;
-  /* font-family: "Rubik", sans-serif; */
 }
 
 #choicesContainer {
@@ -159,15 +158,14 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 65%;
+  width: 90%;
   height: 35%;
-  margin: 3rem 0;
 }
 .choice-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 95%;
+  min-width: 88%;
   height: 17.5%;
   max-height: 20%;
   background: #fff;
@@ -258,167 +256,198 @@ svg rect {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 45%;
+  height: 55%;
   width: 60%;
 }
 
 .finalHeading {
-  font-size: 35px;
+  font-size: 9rem;
   font-family: "Luckiest Guy", cursive;
   color: #f08080;
   text-align: center;
-  width: 18rem;
+  width: 95%;
 }
 
 .the-scores {
-  font-size: 35px;
+  font-size: 4rem;
   font-family: "Luckiest Guy", cursive;
   color: #f08080;
   text-align: center;
-  width: 18rem;
+  width: 70%;
+}
+
+#restart {
+  width: 8rem;
+  height: 4rem;
+  font-size: 2rem;
 }
 
 /******************************************
-/* SMARTPHONE MEDIA QUERY
+/* LAPTOP MEDIA QUERY
 /*******************************************/
 
-@media all and (max-width: 490px) {
-  .home {
-    height: 80%;
-    justify-content: space-evenly;
-  }
-
-  .heading {
-    font-size: 4.5rem;
-  }
+@media only screen and (max-width: 1540px) {
   .game {
-    width: 95%;
-    height: 70%;
+    height: 95%;
   }
-  .buttons {
-    display: flex;
-    width: 80%;
-    max-height: 35%;
+  .heading {
+    font-size: 8rem;
   }
 
   .btn {
-    height: 1.5rem;
-    width: 4rem;
-  }
-  #question {
-    font-size: 1.7rem;
-    height: 25%;
-  }
-
-  #item {
-    height: 70%;
-  }
-
-  #choicesContainer {
-    width: 100%;
-  }
-  .choice-box {
-    width: 90%;
-  }
-}
-
-/******************************************
-/* TABLET MEDIA QUERY
-/*******************************************/
-
-@media screen and (min-width: 491px) and (max-width: 768px) {
-  .homeHeading {
-    font-size: 8.5rem;
-  }
-  .game {
-    width: 45rem;
-    height: 60rem;
-  }
-  .buttons {
-    width: 90%;
-  }
-  #homeBtn {
-    padding: 1.3rem;
-    font-size: 1.3rem;
-  }
-
-  #question {
-    height: 20%;
-    font-size: 3rem;
-  }
-
-  #item {
-    height: 50%;
-  }
-
-  #choicesContainer {
-    width: 70%;
-  }
-  .choice-box {
-    width: 90%;
-  }
-  #final {
-    height: 50%;
-  }
-}
-
-/******************************************
-/* Desktop Screen
-/*******************************************/
-
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .homeHeading {
-    font-size: 9rem;
-  }
-  .game {
-    width: 55rem;
-    height: 45rem;
-  }
-  .buttons {
-    width: 60%;
-  }
-  #homeBtn {
-    padding: 1rem;
-    font-size: 1.5rem;
-  }
-
-  #question {
-    height: 20%;
-    font-size: 3rem;
-  }
-
-  #item {
-    height: 50%;
-  }
-
-  #choicesContainer {
-    width: 70%;
-  }
-  .choice-box {
-    width: 90%;
-  }
-
-  .choice-option {
-    font-size: 1.4rem;
-  }
-
-  .choice-text {
+    width: 5rem;
+    height: 2rem;
     font-size: 1.2rem;
   }
 
-  #final {
-    height: 60%;
+  .header {
+    height: 16%;
+  }
+  #question {
+    font-size: 2.5rem;
+  }
+
+  #item h2 {
+    font-size: 1.8rem;
+  }
+  #homeBtn {
+    font-size: 1.5rem;
+    width: 4.5rem;
+    height: 1.5rem;
+  }
+  .finalHeading {
+    font-size: 6.5rem;
+  }
+
+  .the-scores {
+    font-size: 2.8rem;
+  }
+  #restart {
+    width: 4.5rem;
+    height: 1.8rem;
+    font-size: 1.5rem;
+  }
+}
+/*****************************************************
+/* LANDSCAPE TABLET MEDIA QUERY
+/****************************************************/
+
+@media only screen and (max-width: 1024px) {
+  .buttons {
+    width: 80%;
+  }
+  .btn {
+    width: 5.5rem;
+    height: 2.5rem;
   }
 
   .finalHeading {
+    font-size: 6.5rem;
+  }
+
+  .the-scores {
+    font-size: 2.8rem;
+  }
+}
+
+/*****************************************************
+/* TABLET MEDIA QUERY
+/****************************************************/
+
+@media only screen and (max-width: 768px) {
+  .buttons {
+    width: 95%;
+  }
+  .btn {
+    width: 5.5rem;
+    height: 2.5rem;
+  }
+  .finalHeading {
     font-size: 8rem;
-    width: 60%;
+  }
+
+  .the-scores {
+    font-size: 2.8rem;
+  }
+}
+
+/******************************************
+/* LARGER SMARTPHONE + EXTRA MEDIA QUERY
+/*******************************************/
+
+@media only screen and (max-width: 650px) {
+  .home {
+    height: 85%;
+  }
+  .game {
+    height: 95%;
+  }
+  .heading {
+    font-size: 4.8rem;
+  }
+  .buttons {
+    width: 80%;
+    height: 55%;
+  }
+  .btn {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .header {
+    height: 12%;
+  }
+  #item h2 {
+    font-size: 1.4rem;
+  }
+
+  #item h3 {
+    font-size: 2.5rem;
+  }
+  #question {
+    font-size: 2rem;
+  }
+
+  #homeBtn {
+    font-size: 1.5rem;
+    width: 4.5rem;
+    height: 1.5rem;
+  }
+
+  .choice-box {
+    min-width: 110%;
+  }
+  .choice-option {
+    width: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .choice-text {
+    font-size: 1rem;
+    padding-left: 0.3rem;
+  }
+  .finalHeading {
+    font-size: 6rem;
   }
 
   .the-scores {
     font-size: 2.5rem;
   }
+
   #restart {
-    font-size: 1.3rem;
+    width: 3.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/******************************************
+/* SMALLER SMARTPHONE MEDIA QUERY
+/*******************************************/
+
+@media only screen and (max-width: 380px) {
+  .heading {
+    font-size: 4.2rem;
   }
 }
