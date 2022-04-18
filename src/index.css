@@ -463,15 +463,14 @@ svg rect {
     height: 13%;
   }
   #item h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   #item h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   #question {
     font-size: 1.7rem;
-    border: 1px solid black;
   }
 
   #backHomeBtn {
@@ -497,7 +496,7 @@ svg rect {
   }
 
   .the-scores {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #restart {
