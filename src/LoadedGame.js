@@ -27,7 +27,7 @@ const LoadedGame = (props) => {
         <Option picked={props.function} letter={"D"} answer={props.D} />
       </div>
       <div id="footer">
-        <Link id="homeBtn" className="btn" to="/" /* name="Home" */>
+        <Link id="backHomeBtn" className="btn" to="/" /* name="Home" */>
           Home
         </Link>
       </div>

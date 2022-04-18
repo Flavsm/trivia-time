@@ -18,6 +18,9 @@
 
 .html {
   font-size: 62.5%;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 /******************************************
@@ -60,7 +63,7 @@
   justify-content: center;
   align-items: center;
   width: 8rem;
-  height: 4rem;
+  height: 2rem;
   border: 2px solid #f08080;
   background: #fff;
   padding: 0.6rem;
@@ -69,6 +72,7 @@
   font-size: 1.7rem;
   font-weight: 600;
   box-shadow: 0 1px 1px 0 #f08080;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .btn:hover {
@@ -214,14 +218,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 3rem;
+  height: 3%;
 }
 
-#homeBtn {
+#backHomeBtn {
   font-size: 2rem;
   width: 6rem;
-  height: 3rem;
+  height: 2rem;
+}
+
+@-moz-document url-prefix() {
+  .heading {
+    font-size: 10.5rem;
+  }
+  .buttons {
+    width: 58%;
+  }
+  #backHomeBtn {
+    width: 5rem;
+    height: 1.8rem;
+    font-size: 1.5rem;
+  }
 }
 
 /******************************************
@@ -291,7 +308,7 @@ svg rect {
     height: 95%;
   }
   .heading {
-    font-size: 8rem;
+    font-size: 9.5rem;
   }
 
   .btn {
@@ -310,10 +327,17 @@ svg rect {
   #item h2 {
     font-size: 1.8rem;
   }
-  #homeBtn {
-    font-size: 1.5rem;
-    width: 4.5rem;
-    height: 1.5rem;
+
+  #choicesContainer {
+    width: 95%;
+  }
+  .choice-box {
+    width: 95%;
+  }
+  #backHomeBtn {
+    width: 4.2rem;
+    height: 0.8rem;
+    font-size: 1.3rem;
   }
   .finalHeading {
     font-size: 6.5rem;
@@ -326,6 +350,22 @@ svg rect {
     width: 4.5rem;
     height: 1.8rem;
     font-size: 1.5rem;
+  }
+  @-moz-document url-prefix() {
+    .header {
+      height: 15%;
+    }
+    #item h2 {
+      font-size: 1.5rem;
+    }
+    #item h3 {
+      font-size: 3rem;
+    }
+    #backHomeBtn {
+      width: 3.2rem;
+      height: 0.5rem;
+      font-size: 1.2rem;
+    }
   }
 }
 /*****************************************************
@@ -348,6 +388,11 @@ svg rect {
   .the-scores {
     font-size: 2.8rem;
   }
+  @-moz-document url-prefix() {
+    .header {
+      height: 17%;
+    }
+  }
 }
 
 /*****************************************************
@@ -368,6 +413,25 @@ svg rect {
 
   .the-scores {
     font-size: 2.8rem;
+  }
+  @-moz-document url-prefix() {
+    .buttons {
+      width: 98%;
+    }
+    .btn {
+      width: 4.5rem;
+      height: 1.5rem;
+      font-size: 1.1rem;
+    }
+    #backHomeBtn {
+      width: 4.3rem;
+      height: 1.3rem;
+      font-size: 1.35rem;
+    }
+
+    .the-scores {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -396,7 +460,7 @@ svg rect {
   }
 
   .header {
-    height: 12%;
+    height: 13%;
   }
   #item h2 {
     font-size: 1.4rem;
@@ -406,13 +470,14 @@ svg rect {
     font-size: 2.5rem;
   }
   #question {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    border: 1px solid black;
   }
 
-  #homeBtn {
-    font-size: 1.5rem;
-    width: 4.5rem;
-    height: 1.5rem;
+  #backHomeBtn {
+    width: 3.5rem;
+    height: 1rem;
+    font-size: 1.3rem;
   }
 
   .choice-box {
@@ -420,11 +485,11 @@ svg rect {
   }
   .choice-option {
     width: 3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .choice-text {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-left: 0.3rem;
   }
   .finalHeading {
@@ -439,6 +504,32 @@ svg rect {
     width: 3.5rem;
     height: 1.5rem;
     font-size: 1rem;
+  }
+  @-moz-document url-prefix() {
+    .heading {
+      font-size: 4rem;
+    }
+    .btn {
+      width: 4rem;
+      height: 1.2rem;
+      font-size: 1rem;
+    }
+    .header {
+      height: 12%;
+    }
+
+    #item h2 {
+      font-size: 1.2rem;
+    }
+
+    #item h3 {
+      font-size: 2rem;
+    }
+    #backHomeBtn {
+      width: 3rem;
+      height: 0.5rem;
+      font-size: 1.1rem;
+    }
   }
 }
 
