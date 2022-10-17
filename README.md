@@ -4,10 +4,6 @@
 
 In this trivia web app, users answer 5 multiple choice questions on the subject of their choosing. As the user progresses, the question counter and the score will update. After the 5 questions are answered, the user will receive a message and their final score. The user will also have the option to play again. Main stacks are JS and React
 
-## Purpose
-
-This is a personal project, built with the intent of practicing React.
-
 ## Challenges
 
 The challenges of this project were mainly:
